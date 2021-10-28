@@ -1,6 +1,9 @@
 body {
   margin: 0;
 }
+
+/*header*/
+
 header {
   text-align: center;
   margin: 50px;
@@ -10,13 +13,40 @@ header img {
   width: 70%;
 }
 
+/*Headlines*/
+
 h1,
 h2 {
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  margin-left: 40px;
 }
 
 h2 {
   font-weight: 600;
+}
+
+.featured__flex {
+  display: flex;
+}
+
+/*images mobile*/
+
+.featured__link--image {
+  object-fit: cover;
+  width: 219px;
+  height: 219px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 10px #36545c);
+  margin-left: 40px;
+}
+
+.featured__profile {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 10px;
 }
