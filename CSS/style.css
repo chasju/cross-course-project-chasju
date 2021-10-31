@@ -21,6 +21,10 @@ header {
 header img {
   width: 60%;
 }
+
+.upload__desktop {
+  display: none;
+}
 /*Headlines*/
 
 h1,
@@ -51,8 +55,17 @@ h2 {
 }
 
 .featured__1,
-.featured__2 {
+.featured__2,
+.featured__3 {
   width: 45%;
+}
+
+.featured__3 {
+  display: none;
+}
+
+.categories {
+  display: none;
 }
 
 .image__wrapper {
@@ -61,10 +74,10 @@ h2 {
 
 .image__wrapper .overlay {
   position: absolute;
-  bottom: 0%;
+  bottom: 3px;
 }
 
-/*images mobile*/
+/*featured*/
 
 .featured__link--image {
   width: 100%;
@@ -107,6 +120,8 @@ h2 {
   margin-top: 20px;
 }
 
+/*creators*/
+
 .creators {
   width: 80%;
   height: 200px;
@@ -126,8 +141,6 @@ h2 {
   width: 75px;
   border-radius: 50%;
 }
-
-/*creators*/
 
 h2 {
   margin-top: 50px;
@@ -181,12 +194,9 @@ a {
   font-size: 200%;
 }
 
-.nav__search {
-  font-size: 280%;
-  font-weight: 900;
-}
-
 .nav__active {
+  font-size: 150%;
+  font-weight: 900;
   background-color: #64868f;
   min-width: 80px;
   min-height: 70px;
@@ -199,4 +209,223 @@ a {
 
 .nav__bar a {
   color: #fff;
+}
+
+.footer__wrapper {
+  display: none;
+}
+
+@media (min-width: 690px) {
+  body {
+    width: 100%;
+  }
+
+  main {
+    width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  .featured__1,
+  .featured__2,
+  .featured__3 {
+    width: 30%;
+  }
+
+  .featured__flex {
+    justify-content: space-between;
+  }
+
+  .featured__3 {
+    display: block;
+  }
+
+  .creators {
+    height: 300px;
+  }
+
+  .creators__profile {
+    width: 120px;
+  }
+
+  .nav__icon {
+    font-size: 60px;
+  }
+
+  .nav__active {
+    width: 110px;
+    height: 100px;
+  }
+
+  .nav__link {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 920px) {
+  body,
+  html {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .nav__bar {
+    background-color: #36545c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: right;
+  }
+
+  .nav__link {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .nav__active {
+    background-color: #36545c;
+    margin: 0;
+    height: 10px;
+  }
+
+  .nav__icon {
+    font-size: 25px;
+  }
+
+  .upload__desktop {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    background-color: #e39d18;
+    padding: 15px 35px;
+    color: #36545c;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+
+  header img {
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    z-index: 1;
+  }
+
+  main {
+    max-width: 80%;
+  }
+
+  .featured__2,
+  .featured__3 {
+    display: none;
+  }
+
+  .featured,
+  .creators {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .featured h1 {
+    margin-top: 0;
+  }
+
+  .categories {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .categories h2 {
+    margin-top: 0;
+    padding-bottom: 11px;
+  }
+
+  .featured__link--image {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+  }
+
+  .categories__link--image {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .overlay {
+    width: 400px;
+  }
+
+  .image__wrapper .categories__overlay {
+    width: 200px;
+  }
+
+  .featured__profile {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .cta__container {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .flex__wrapper {
+    position: relative;
+    max-width: 800px;
+    min-width: 640px;
+    margin: auto;
+    top: 170px;
+    display: flex;
+  }
+
+  .creators {
+    max-width: 800px;
+    height: 400px;
+    padding-top: 200px;
+  }
+
+  footer {
+    background-color: #36545c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 150px;
+  }
+
+  .footer__wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  .footer__wrapper h1 {
+    text-align: center;
+    width: 200px;
+  }
+
+  .footer__wrapper p {
+    width: 600px;
+    font-size: 14px;
+  }
 }
