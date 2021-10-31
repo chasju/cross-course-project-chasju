@@ -1,25 +1,26 @@
 body,
 html {
   width: 100vp;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  margin: 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /*header*/
 
 header {
-  text-align: center;
   margin: 50px;
+  text-align: center;
 }
 
 header img {
-  width: 70%;
+  width: 60%;
 }
-
 /*Headlines*/
 
 h1,
@@ -27,7 +28,6 @@ h2 {
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 40px;
 }
 
 h2 {
@@ -36,21 +36,42 @@ h2 {
 
 .featured {
   padding-top: 10px;
+  width: 80%;
+  background-color: yellow;
+  margin: auto;
+}
+
+.featured h1 {
+  text-align: left;
 }
 
 .featured__flex {
   display: flex;
+  justify-content: space-between;
+}
+
+.featured__1,
+.featured__2 {
+  width: 45%;
+}
+
+.featured__1 {
+  background-color: red;
 }
 
 /*images mobile*/
 
 .featured__link--image {
-  object-fit: cover;
-  width: 219px;
-  height: 219px;
+  width: 100%;
   border-radius: 10px;
   filter: drop-shadow(3px 3px 10px #36545c);
-  margin-left: 40px;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
 }
 
 .featured__profile {
@@ -58,23 +79,36 @@ h2 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 40px;
   margin-top: 20px;
-  margin-right: 20px;
-  display: inline-block;
-  float: left;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.4);
+  height: 60px;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.creators {
+  width: 65%;
+  margin: auto;
+  background-color: blue;
+}
+
+.creators h2 {
+  text-align: left;
 }
 
 .creators__wrapper {
-  margin-left: 40px;
+  display: flex;
 }
 
 .creators__profile {
-  object-fit: cover;
-  width: 70px;
-  height: 70px;
+  width: 60%;
   border-radius: 50%;
-  margin-right: 15px;
 }
 
 /*creators*/
@@ -96,7 +130,4 @@ a {
   border: 1px solid black;
   border-radius: 20px;
   font-size: 12px;
-  margin-left: 40px;
-  margin-top: 10px;
-  display: table;
 }
