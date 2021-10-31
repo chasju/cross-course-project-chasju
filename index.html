@@ -9,6 +9,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap"
       rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" />
     <title>Square Eyes | Home</title>
   </head>
@@ -21,23 +23,27 @@
         <h1>Featured</h1>
         <div class="featured__flex">
           <div class="featured__1">
-            <a href="" ><img class="featured__link--image"
+            <div class="image__wrapper">
+              <a href="" ><img class="featured__link--image"
                 src="/images/resized/hollywood.jpg"
                 alt="Info page on 'Two guys and a sign' movie"/>
                 <div class="overlay"><p >1h 45min  Two guys and a sign</p>
                 </div></a>
+            </div>
             <div class="cta__container">
               <a href=""><img class="featured__profile" src="/images/resized/ivana-cajina.jpg" alt="View profile of George Clooney"/></a>
-              <a class="cta" href="">Buy $25</a>
-              <a class="cta" href="">Pay Per View $2</a>
+              <a class="cta cta__buy" href="">Buy $25</a>
+              <a class="cta cta__ppv" href="">Pay Per View $2</a>
             </div>
           </div>
           <div class="featured__2">
+            <div class="image__wrapper">
             <a href="" ><img class="featured__link--image"
                 src="/images/resized/star wars.jpg"
                 alt="Info page on 'Friends' movie"/>
               <div class="overlay"><p >2h 02min  Friends</p>
               </div></a>
+            </div>
               <div class="cta__container">
                 <a href=""><img class="featured__profile" src="/images/resized/michael-dam.jpg" alt="View profile of Julia Roberts"/></a>
                 <a href="" class="cta">Buy $25</a>
@@ -57,7 +63,30 @@
       </section>
     </main>
     <footer>
-      <nav class="nav__bar"></nav>
+      <nav class="nav__bar">
+        <a href="#" class="nav__link ">
+          <div class="nav__active">
+          <span class="material-icons nav__icon">
+            home
+          </span>
+        </div>
+        </a>
+        <a href="/favorites.html" class="nav__link">
+          <span class="material-icons nav__icon">
+            favorite
+          </span> 
+        </a> 
+        <a href="/search.html" class="nav__link">
+          <span class="material-icons nav__icon nav__search">
+            search
+            </span> 
+        </a>
+        <a href="/profile.html" class="nav__link">
+          <span class="material-icons nav__icon">
+              person
+          </span>
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
