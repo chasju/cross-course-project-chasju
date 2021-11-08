@@ -8,118 +8,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap"
-      rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Square Eyes | Home</title>
   </head>
   <body>
     <header>
-      <a href="/index.html"></a><img src="/logo/SquareEyes_Logo.png" alt="Square eyes logo"/></a>
-      <a href="/profile.html"><p class="upload__desktop">Upload project</p></a>
+      <a href="index.html"
+        ><img
+          src="/logo/SquareEyes_Logo.png"
+          class="logo"
+          alt="Square eyes logo"
+      /></a>
+      <nav class="nav__bar">
+        <a href="" class="nav__link">
+          <div>
+            <span class="material-icons nav__icon">search</span>
+          </div>
+        </a>
+        <a href="" class="nav__link">
+          <div>
+            <span class="material-icons nav__icon">favorite</span>
+          </div>
+        </a>
+        <a href="" class="nav__link">
+          <div>
+            <span class="material-icons nav__icon">person</span>
+          </div>
+        </a>
+        <a href="" class="nav__link">
+          <div>
+            <span class="material-icons nav__icon">home</span>
+          </div>
+        </a>
+      </nav>
     </header>
     <main>
-      <div class="flex__wrapper">
-        <section class="featured">
-          <h1>Featured</h1>
-          <div class="featured__flex">
-            <div class="featured__1">
-              <div class="image__wrapper">
-                <a href="/filmpage.html" ><img class="featured__link--image"
-                  src="/images/resized/hollywood.jpg"
-                  alt="Info page on 'Two guys and a sign' movie"/>
-                  <div class="overlay"><p >1h 45min  Two guys and a sign</p>
-                  </div></a>
-              </div>
-              <div class="cta__container">
-                <a href="/profile.html"><img class="featured__profile" src="/images/resized/ivana-cajina.jpg" alt="View profile of George Clooney"/></a>
-                <a class="cta cta__buy" href="#">Buy $25</a>
-                <a class="cta cta__ppv" href="#">Pay Per View $2</a>
-              </div>
-            </div>
-            <div class="featured__2">
-              <div class="image__wrapper">
-              <a href="/filmpage.html" ><img class="featured__link--image"
-                  src="/images/resized/star wars.jpg"
-                  alt="Info page on 'Friends' movie"/>
-                <div class="overlay"><p >2h 02min  Friends</p>
-                </div></a>
-              </div>
-                <div class="cta__container">
-                  <a href="/profile.html"><img class="featured__profile" src="/images/resized/michael-dam.jpg" alt="View profile of Julia Roberts"/></a>
-                  <a href="" class="cta">Buy $25</a>
-                  <a href="" class="cta">Pay Per View $2</a>
-                </div>
-            </div>
-            <div class="featured__3">
-              <div class="image__wrapper">
-              <a href="/filmpage.html" ><img class="featured__link--image"
-                  src="/images/resized/hollywood.jpg"
-                  alt="Info page on 'Friends' movie"/>
-                <div class="overlay"><p>1h 45min  Two guys and a sign</p>
-                </div></a>
-              </div>
-              <div class="cta__container">
-                <a href="/profile.html"><img class="featured__profile" src="/images/resized/michael-dam.jpg"alt="View profile of Julia Roberts"/></a>
-                <a href="" class="cta">Buy $25</a>
-                <a href="" class="cta">Pay Per View $2</a>
-              </div>
-            </div>
+      <h1>Featured</h1>
+      <div class="featured__container">
+        <section>
+          <div class="featured">
+            <a href=""
+              ><img
+                src="/images/resized/hollywood.jpg"
+                class="featured__img"
+                alt="Film page for 'two guys and a sign' movie"
+            /></a>
+            <div class="overlay"><p>1h 45min | Two guys and a sign</p></div>
+          </div>
+          <div class="featured__cta">
+            <a href="" class="profile__img profile__small"
+              ><img src="/images/resized/ivana-cajina.jpg" alt=""
+            /></a>
+            <a href="" class="cta__buy"></a>
+            <a href="" class="cta__ppv"></a>
           </div>
         </section>
-        <section class="categories">
-          <h2>Categories</h2>
-          <div class="featured__1">
-            <div class="image__wrapper">
-              <a href="filmpage.html" ><img class="categories__link--image"
-                src="/images/resized/hollywood.jpg"
-                alt="Info page on 'Two guys and a sign' movie"/>
-                <div class="overlay categories__overlay"><p >1h 45min  Two guys and a sign</p>
-                </div></a>
-            </div>
+        <section>
+          <div class="featured">
+            <a href=""
+              ><img
+                src="/images/resized/star wars.jpg"
+                class="featured__img"
+                alt=""
+            /></a>
+            <p></p>
+          </div>
+          <div class="featured__cta">
+            <a href="" class="profile__small"
+              ><img
+                src="/images/resized/michael-dam.jpg"
+                alt="Film page for 'Fiends' movie"
+            /></a>
+            <a href="" class="cta__buy"></a>
+            <a href="" class="cta__ppv"></a>
           </div>
         </section>
       </div>
       <section class="creators">
         <h2>Creators</h2>
-        <div class="creators__wrapper">
-          <a href="/profile.html"><img class="creators__profile" src="/images/resized/ian-dooley-.jpg" alt="View Brad Pitts film page"></a>
-          <a href="/profile.html"><img class="creators__profile" src="/images/resized/ivana-cajina.jpg" alt="View George Clooneys film page"></a>
-          <a href="/profile.html"><img class="creators__profile" src="/images/resized/michael-dam.jpg" alt="View Julia Roberts film page"></a>
-          <a href="/profile.html"><img class="creators__profile" src="/images/resized/toa-heftiba.jpg" alt="View Matt Damons film page"></a>
+        <div class="creators__content">
+          <a href="" class="profile__img profile__big"><img src="" alt="" /></a>
+          <a href="" class="profile__img profile__big"><img src="" alt="" /></a>
+          <a href="" class="profile__img profile__big"><img src="" alt="" /></a>
+          <a href="" class="profile__img profile__big"><img src="" alt="" /></a>
         </div>
       </section>
     </main>
-    <footer>
-      <nav class="nav__bar">
-        <a href="index.html" class="nav__link ">
-          <div class="nav__active">
-          <span class="material-icons nav__icon">
-            home
-          </span>
-        </div>
-        </a>
-        <a href="/favorites.html" class="nav__link">
-          <span class="material-icons nav__icon">
-            favorite
-          </span> 
-        </a> 
-        <a href="/search.html" class="nav__link">
-          <span class="material-icons nav__icon nav__search">
-            search
-            </span> 
-        </a>
-        <a href="/profile.html" class="nav__link">
-          <span class="material-icons nav__icon">
-              person
-          </span>
-        </a>
-      </nav>
-      <section class="footer__wrapper">
-        <h1>What is square eyes?</h1>
-        <p>Square eyes is a video streaming website for independent filmmakers to stream videos on a pay-per-view basis. Enjoy it as just a watcher or upload your very own projects.</p>
-      </section>
-    </footer>
+    <footer></footer>
   </body>
 </html>
