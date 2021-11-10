@@ -1,7 +1,8 @@
 /*Skeleton*/
 
-body {
-  height: 100%;
+body,
+html {
+  height: 100vh;
   width: 100%;
   margin: 0 0 100px 0;
 }
@@ -17,10 +18,37 @@ a {
   text-decoration: none;
 }
 
+/*Header*/
+
 header {
   width: 100%;
   text-align: center;
   padding: 70px 0px;
+}
+
+.nav__bar a {
+  color: #fff;
+  margin: auto;
+}
+
+.upload__button {
+  display: none;
+}
+
+.upload__wide {
+  display: block;
+  background-color: #e39d18;
+  color: #36545c;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 70px auto;
+  padding: 12px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .nav__bar {
@@ -41,11 +69,6 @@ header {
   justify-content: space-around;
 }
 
-.nav__bar a {
-  color: #fff;
-  margin: auto;
-}
-
 .nav__icon {
   font-size: 2em;
 }
@@ -53,6 +76,20 @@ header {
 .logo {
   width: 250px;
 }
+
+.header__small {
+  padding: 50px 0 80px 0;
+}
+
+.logo__small {
+  width: 100px;
+}
+
+.profile__main {
+  width: 90%;
+}
+
+/*/Header*/
 
 /*Headlines*/
 
@@ -65,6 +102,13 @@ h2 {
 h2 {
   font-weight: 600;
 }
+
+.profile__main h1 {
+  font-size: 1.5em;
+  margin-left: 25px;
+}
+
+/*/headlines*/
 
 /*Featured*/
 
@@ -117,6 +161,78 @@ h2 {
   padding-left: 10px;
 }
 
+/*/featured*/
+
+/*profile.html*/
+
+.profile__main .featured {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.profile__main .overlay {
+  position: absolute;
+  top: auto;
+  bottom: 2;
+}
+
+.profile__main .featured__img,
+.profile__main .overlay {
+  width: 100%;
+}
+
+.stats {
+  text-decoration: underline;
+  font-size: 0.7em;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.profilehtml__img {
+  width: 80px;
+  height: 80px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.profilehtml__info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.profilehtml__content {
+  line-height: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.name {
+  color: #e39d18;
+  text-transform: uppercase;
+}
+
+.age {
+  font-size: 0.8em;
+  color: #424242;
+}
+
+.profilehtml__bio {
+  font-size: 0.8em;
+  width: 270px;
+  line-height: 1.5em;
+  margin: 20px auto 130px auto;
+}
+
+/*/profile.html*/
+
+/*cta*/
+
 .featured__cta {
   display: flex;
   align-items: center;
@@ -148,9 +264,17 @@ h2 {
   width: 80px;
 }
 
+/*/cta*/
+
+/*categories*/
+
 .categories__container {
   display: none;
 }
+
+/*/categories*/
+
+/*creators*/
 
 .creators__content {
   display: flex;
@@ -163,6 +287,10 @@ h2 {
   width: 70px;
   height: 70px;
 }
+
+/*/creators*/
+
+/*footer*/
 
 .footer__content {
   display: none;
@@ -202,11 +330,12 @@ h2 {
   .featured__container {
     max-width: 90%;
     margin: auto;
+    padding-bottom: 100px;
   }
 
   .featured__section {
     width: 170px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .featured__section:nth-child(3) {
@@ -225,7 +354,8 @@ h2 {
 }
 
 @media (min-width: 880px) {
-  body {
+  body,
+  html {
     margin: 0;
   }
 
@@ -259,6 +389,64 @@ h2 {
 
   .nav__icon {
     font-size: 1.7em;
+  }
+
+  .upload__button {
+    display: inline-block;
+    background-color: #e39d18;
+    color: #36545c;
+    padding: 12px 30px;
+    margin: auto;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    z-index: 1;
+  }
+
+  .upload__wide {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .profile__main {
+    max-width: 900px;
+  }
+
+  .profilehtml__flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile__main .featured {
+    width: 400px;
+    margin: 0;
+  }
+
+  .stats {
+    margin: 0;
+    width: 380px;
+  }
+
+  .profilehtml__info .name,
+  .profilehtml__info .age {
+    left: 0;
+    top: 0;
+    width: 170px;
+  }
+
+  .profilehtml__content {
+    width: 350px;
+    top: 0;
+  }
+
+  .profilehtml__img {
+    margin-left: 20px;
+  }
+
+  .profilehtml__bio {
+    margin: 30px auto;
   }
 
   .featured__container {
@@ -301,21 +489,10 @@ h2 {
 
   .name,
   .age {
-    font-size: 1em;
     position: relative;
     width: 110px;
     left: 90px;
     top: -85px;
-  }
-
-  .name {
-    color: #e39d18;
-    text-transform: uppercase;
-  }
-
-  .age {
-    font-size: 0.8em;
-    color: #424242;
   }
 
   .description {
@@ -371,6 +548,10 @@ h2 {
     position: relative;
     bottom: 0;
     display: flex;
+  }
+
+  .profilehtml__footer {
+    position: absolute;
   }
 
   .footer__content {
