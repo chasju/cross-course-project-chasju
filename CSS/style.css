@@ -751,7 +751,7 @@ input[type="text"] {
 
   main {
     max-width: 1000px;
-    margin-top: 100px;
+    margin-top: 180px;
   }
 
   header {
@@ -805,7 +805,7 @@ input[type="text"] {
     border-radius: 10px;
     text-transform: uppercase;
     font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 300px;
     z-index: 1;
