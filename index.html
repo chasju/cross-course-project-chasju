@@ -42,7 +42,7 @@
               <span class="material-icons nav__icon">person</span>
             </div>
           </a>
-          <a href="index.html" class="nav__link">
+          <a href="index.html" class="nav__link active">
             <div>
               <span class="material-icons nav__icon">home</span>
             </div>
@@ -73,8 +73,8 @@
                   alt="Profile picture of George Clooney"
               /></a>
               <div class="cta__content">
-                <a href="/overlay_buy.html" class="cta__buy">$25 Buy Now</a>
-                <a href="/overlay_ppv.html" class="cta__ppv">$2 Pay Per View</a>
+                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
+                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
               </div>
             </div>
             <div class="cta__name-info">
@@ -107,8 +107,8 @@
                   alt="Profile picture of Julia Roberts"
               /></a>
               <div class="cta__content">
-                <a href="/overlay_buy.html" class="cta__buy">$25 Buy Now</a>
-                <a href="/overlay_ppv.html" class="cta__ppv">$2 Pay Per View</a>
+                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
+                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
               </div>
             </div>
           </section>
@@ -130,8 +130,8 @@
                   alt="Profile picture of George Clooney"
               /></a>
               <div class="cta__content">
-                <a href="/overlay_buy.html" class="cta__buy">$25 Buy Now</a>
-                <a href="/overlay_ppv.html" class="cta__ppv">$2 Pay Per View</a>
+                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
+                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
               </div>
             </div>
           </section>
@@ -140,46 +140,44 @@
           <h2>Categories</h2>
           <div class="categories__section-container">
             <section class="categories__section">
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><img
                   src="/images/mulyadi-wYzjL5BwiEI-unsplash.jpg"
                   class="categories__img"
                   alt="Romantic category"
               /></a>
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><p class="categories__name">Romantic</p></a
               >
             </section>
             <section class="categories__section">
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><img
                   src="/images/jon-tyson-A-obUh61bKw-unsplash.jpg"
                   class="categories__img"
                   alt="Comedy category"
               /></a>
-              <a href="/categories.html"
-                ><p class="categories__name">Comedy</p></a
-              >
+              <a href="/search.html"><p class="categories__name">Comedy</p></a>
             </section>
             <section class="categories__section">
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><img
                   src="/images/gordon-cowie-zh6FfPNRZwc-unsplash.jpg"
                   class="categories__img"
                   alt="Documentary category"
               /></a>
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><p class="categories__name">Documentary</p></a
               >
             </section>
             <section class="categories__section">
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><img
                   src="/images/ahmet-yalcinkaya-aNrRsB2wLDk-unsplash.jpg"
                   class="categories__img"
                   alt="Hollywood category"
               /></a>
-              <a href="/categories.html"
+              <a href="/search.html"
                 ><p class="categories__name">Hollywood</p></a
               >
             </section>
@@ -214,6 +212,56 @@
               alt="Filmpage of Catherine Zeta-Jones"
           /></a>
         </div>
+      </section>
+      <section class="overlayhtml__section">
+        <div id="overlayhtml__buy">
+          <a href="" class="close">x</a>
+          <div class="overlayhtml__flex">
+            <h1>$25</h1>
+            <div>
+              <img
+                src="/images/resized/star wars.jpg"
+                class="overlayhtml__img"
+                alt="image buy 'friends' movie"
+              />
+              <p class="overlayhtml__p">2h 02min Friends</p>
+            </div>
+            <div class="overlayhtml__vipps">
+              <p>pay with</p>
+              <img
+                src="/images/vipps-logo-orange.png"
+                class="vipps"
+                alt="vipps logo"
+              />
+              <p>or add card information</p>
+            </div>
+            <div class="overlayhtml__input">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name cardholder"
+              />
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="card number"
+              />
+              <input
+                type="text"
+                name="exp-date"
+                id="exp-date"
+                placeholder="exp.date"
+              />
+              <input type="text" name="cvc" id="cvc" placeholder="cvc" />
+            </div>
+            <div class="overlayhtml__button">
+              <a href="#">buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="overlayhtml"></div>
       </section>
     </main>
     <footer>

@@ -77,6 +77,12 @@ header {
   font-size: 2em;
 }
 
+.active {
+  background-color: #64868f;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
 .logo {
   width: 250px;
 }
@@ -91,6 +97,17 @@ header {
 
 .profile__main {
   width: 90%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 90px;
+  background-color: red;
+  text-align: right;
+}
+
+.dropdown ul {
+  list-style-type: none;
 }
 
 /*/Header*/
@@ -324,6 +341,104 @@ input[type="text"] {
 
 /*/profile.html*/
 
+/*overlay.html*/
+
+.overlayhtml__section {
+  margin: auto;
+  width: 90%;
+  height: 1px;
+}
+
+.overlayhtml {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#overlayhtml__buy {
+  background-color: #fff;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: -600px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 10;
+  display: none;
+}
+
+#overlayhtml__buy:target,
+#overlayhtml__buy:target + .overlayhtml {
+  display: block;
+  opacity: 2;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.overlayhtml__flex h1 {
+  padding-top: 20px;
+}
+
+.overlayhtml__img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.overlayhtml__p {
+  font-size: 0.7em;
+}
+
+.overlayhtml__vipps {
+  line-height: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 12px 0;
+}
+
+.vipps {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.overlayhtml__input {
+  max-width: 300px;
+  margin: auto;
+}
+
+.overlayhtml__input input {
+  line-height: unset;
+  margin: 12px;
+  width: 200px;
+  padding-top: 5px;
+}
+
+.overlayhtml__button {
+  margin-top: 20px;
+}
+
+.overlayhtml__button a {
+  background-color: #36545c;
+  color: #e39d18;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+}
+
+/*/overlay.html*/
+
 /*Favorites.html*/
 
 .favorites__section {
@@ -438,6 +553,57 @@ input[type="text"] {
 }
 
 /*/filmpage.html*/
+
+/*search.html*/
+
+.search__container {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+#search {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 10px #7e7e7e);
+  padding: 6px 0;
+  text-align: center;
+  background-image: url(/sm-icons/icons8-search-60.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 95%;
+}
+
+.search__categories {
+  display: block;
+  max-width: 900px;
+}
+
+.categories__section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.categories__section {
+  width: 150px;
+}
+
+.categories__img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 10px #36545c);
+}
+
+.categories__name {
+  color: #424242;
+}
+
+/*/search.html*/
 
 /*cta*/
 
@@ -554,6 +720,14 @@ input[type="text"] {
   }
 
   /*/images*/
+
+  /*overlay.html*/
+
+  #overlayhtml__buy {
+    top: -1130px;
+  }
+
+  /*overlay.html*/
 }
 
 @media (min-width: 670px) {
@@ -741,6 +915,19 @@ input[type="text"] {
   }
 
   /*/filmpage.html*/
+
+  /*overlay.html*/
+
+  #overlayhtml__buy {
+    height: 600px;
+  }
+
+  .overlayhtml__input input {
+    line-height: unset;
+    margin: 15px auto;
+  }
+
+  /*overlay.html*/
 }
 
 @media (min-width: 880px) {
@@ -839,6 +1026,7 @@ input[type="text"] {
 
   .profile__main {
     max-width: 900px;
+    margin-top: 80px;
   }
 
   .profilehtml__flex-container {
@@ -1061,6 +1249,14 @@ input[type="text"] {
     font-size: 0.8em;
     width: 500px;
   }
+
+  /*overlay.html*/
+
+  #overlayhtml__buy {
+    top: -1000px;
+  }
+
+  /*/overlay.html*/
 }
 
 @media (min-width: 1000px) {
