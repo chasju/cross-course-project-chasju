@@ -77,6 +77,31 @@ header {
   font-size: 2em;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  background: #36545c;
+  right: -3px;
+  top: 50px;
+  border-radius: 10px;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 30px;
+  line-height: 3em;
+  list-style-type: none;
+  display: none;
+}
+
+.dropdown:hover .list {
+  display: block;
+}
+
 .active {
   background-color: #64868f;
   padding: 15px 20px;
@@ -97,17 +122,6 @@ header {
 
 .profile__main {
   width: 90%;
-}
-
-.dropdown {
-  position: absolute;
-  top: 90px;
-  background-color: red;
-  text-align: right;
-}
-
-.dropdown ul {
-  list-style-type: none;
 }
 
 /*/Header*/
