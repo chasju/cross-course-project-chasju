@@ -98,10 +98,6 @@ header {
   display: none;
 }
 
-.dropdown:hover .list {
-  display: block;
-}
-
 .active {
   background-color: #64868f;
   padding: 15px 20px;
@@ -995,6 +991,10 @@ input[type="text"] {
 
   .nav__icon {
     font-size: 1.7em;
+  }
+
+  .dropdown:hover .list {
+    display: block;
   }
 
   .upload__button {
