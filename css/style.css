@@ -978,7 +978,8 @@ input[type="text"] {
     width: 200px;
     margin-left: 20px;
     padding-top: 45px;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
   }
 
   .login__header {
