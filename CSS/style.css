@@ -105,15 +105,15 @@ header {
 }
 
 .logo {
+  display: none;
+}
+
+.logo__mobile {
   width: 250px;
 }
 
 .header__small {
   padding: 50px 0 80px 0;
-}
-
-.logo__small {
-  width: 100px;
 }
 
 .profile__main {
@@ -648,6 +648,15 @@ input[type="text"] {
   width: 80px;
 }
 
+.cta__buy:hover {
+  background-color: orange;
+}
+
+.cta__ppv:hover {
+  background-color: #36545c;
+  color: white;
+}
+
 .filmpage__cta {
   flex-direction: row;
 }
@@ -940,6 +949,14 @@ input[type="text"] {
 }
 
 @media (min-width: 880px) {
+  /* HIDE */
+
+  .logo__mobile {
+    display: none;
+  }
+
+  /*/ HIDE */
+
   body,
   html {
     margin: 0;
@@ -957,10 +974,10 @@ input[type="text"] {
   }
 
   .logo {
+    display: block;
     width: 200px;
-    position: fixed;
-    top: 50px;
-    left: 50px;
+    margin-left: 20px;
+    padding-top: 45px;
     z-index: 2;
   }
 
@@ -975,17 +992,21 @@ input[type="text"] {
 
   .nav__bar {
     top: 0;
-    width: 100%;
-    right: 0;
-    padding-right: 40px;
     border-radius: 0;
-    justify-content: end;
+    justify-content: space-between;
+  }
+
+  .nav__bar a {
+    margin: unset;
   }
 
   .nav__link-container {
     width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-right: 20px;
   }
 
   .nav__icon {
