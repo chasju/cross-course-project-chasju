@@ -4,13 +4,15 @@ body,
 html {
   min-height: 100vh;
   width: 100%;
-  margin: 0 0 100px 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
   width: 85%;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -112,10 +114,6 @@ header {
   width: 250px;
 }
 
-.header__small {
-  padding: 50px 0 80px 0;
-}
-
 .profile__main {
   width: 90%;
 }
@@ -155,8 +153,6 @@ h2 {
 }
 
 .featured {
-  margin-right: 10px;
-  margin-bottom: 20px;
   position: relative;
 }
 
@@ -165,9 +161,17 @@ h2 {
 }
 
 .featured__img {
+  background-image: url(/images/resized/hollywood.jpg);
   width: 100%;
+  height: 160px;
+  background-size: 100%;
+  background-position: center;
   border-radius: 10px;
-  filter: drop-shadow(3px 3px 10px #36545c);
+}
+
+.featured__img-profile,
+.featured__img-filmpage {
+  height: 250px;
 }
 
 .profile__img {
@@ -183,7 +187,7 @@ h2 {
   width: 100%;
   border-radius: 10px;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
 }
 
 .overlay p {
@@ -204,11 +208,8 @@ h2 {
 
 .profile__main .overlay {
   position: absolute;
-  top: auto;
-  bottom: 2;
 }
 
-.profile__main .featured__img,
 .profile__main .overlay {
   width: 100%;
 }
@@ -509,12 +510,6 @@ input[type="text"] {
 
 /*filmpage.html*/
 
-.filmpage__img {
-  width: 100%;
-  height: 300px;
-  max-width: 450px;
-}
-
 .filmpage__profile-img {
   width: 100px;
   height: 100px;
@@ -696,6 +691,17 @@ input[type="text"] {
 /*Media Queries*/
 
 @media (max-width: 410px) {
+  main {
+    max-width: 270px;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+  header {
+    margin-bottom: unset;
+  }
+
   .featured__container {
     display: block;
   }
@@ -703,23 +709,17 @@ input[type="text"] {
   .featured__section {
     width: 250px;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+  }
+
+  .featured {
+    margin-bottom: 10px;
   }
 
   /*images*/
 
-  .featured__img {
-    width: 250px;
-  }
-
-  .filmpage__img {
-    width: 100%;
-    height: 250px;
-  }
-
   .overlay {
     width: 250px;
-    top: 200px;
   }
 
   .filmpage__overlay {
@@ -730,33 +730,32 @@ input[type="text"] {
     font-size: 0.8em;
   }
 
-  .filmpage__project-img {
-    height: 150px;
-  }
-
-  .filmpage__project-overlay {
-    top: unset;
+  .featured__img-profile {
+    height: 200px;
   }
 
   /*/images*/
-
-  /*overlay.html*/
-
-  #overlayhtml__buy {
-    top: -1130px;
-  }
-
-  /*overlay.html*/
 }
 
 @media (min-width: 670px) {
   main {
-    max-width: 90%;
+    max-width: 600px;
   }
+
   .featured__container {
     max-width: 90%;
     margin: auto;
     padding-bottom: 100px;
+  }
+
+  .featured__img-profile,
+  .featured__img-filmpage {
+    height: 350px;
+  }
+
+  .profilehtml__flex-item {
+    width: 100%;
+    margin: auto;
   }
 
   .featured__section {
@@ -891,13 +890,6 @@ input[type="text"] {
 
   .featured__filmpage {
     max-width: 600px;
-    width: 90%;
-    margin: auto;
-  }
-
-  .filmpage__img {
-    max-width: 670px;
-    height: 350px;
     margin: auto;
   }
 
@@ -964,13 +956,18 @@ input[type="text"] {
 
   main {
     max-width: 1000px;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+  }
+
+  main h1 {
+    text-align: center;
   }
 
   header {
     position: relative;
     height: 80px;
     padding: 0;
+    margin-bottom: 150px;
   }
 
   .logo {
@@ -1108,10 +1105,6 @@ input[type="text"] {
     width: 350px;
   }
 
-  .featured__img {
-    height: 250px;
-  }
-
   .featured__section:nth-child(2),
   .featured__section:nth-child(3) {
     display: none;
@@ -1203,16 +1196,11 @@ input[type="text"] {
   .featured__filmpage {
     width: 550px;
     height: 350px;
-    margin: 0;
-  }
-
-  .filmpage__img {
-    height: 350px;
+    margin: auto;
   }
 
   .filmpage__cta {
     top: unset;
-    margin: 0;
     margin-top: 10px;
   }
 
@@ -1301,14 +1289,6 @@ input[type="text"] {
     max-width: 800px;
   }
 
-  .featured__img {
-    height: 300px;
-  }
-
-  .filmpage__img {
-    height: 350px;
-  }
-
   .categories__container {
     width: 380px;
   }
@@ -1334,5 +1314,11 @@ input[type="text"] {
 
   .filmpage__project-img {
     height: 250px;
+  }
+}
+
+@media (min-width: 1177px) {
+  main h1 {
+    text-align: left;
   }
 }
