@@ -1252,12 +1252,10 @@ input[type="text"] {
   }
 
   .favorites__footer {
-    bottom: 0;
   }
 
   .profilehtml__footer {
     position: absolute;
-    bottom: 0;
   }
 
   .footer__content {
