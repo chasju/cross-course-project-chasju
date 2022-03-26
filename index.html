@@ -32,6 +32,7 @@
   </head>
   <body>
     <header>
+      <div class="logo__background"></div>
       <a href="index.html"
         ><img src="/logo/SquareEyes_Logo.png" class="logo__mobile" alt="Square eyes logo"
       /></a>
@@ -50,18 +51,17 @@
               <span class="material-icons nav__icon">favorite</span>
             </div>
           </a>
-          <a href="/profile.html" class="nav__link dropdown">
-            <div>
-              <span class="material-icons nav__icon">person</span>
-              <ul class="list">
-                <li>Sign in</li>
-                <li>My account</li>
-                <li>My projects</li>
-                <li>My purchases</li>
-                <li>Billing information</li>
-              </ul>
-            </div>
-          </a>
+          <div>
+            <label for="searchpage"><span class="material-icons nav__icon">person</span></label>
+            <input type="checkbox" name="searchpage" id="searchpage" class="list__toggle" />
+            <ul class="list">
+              <li><a href="/login.html">Sign in</a></li>
+              <li><a href="/profile.html">My account</a></li>
+              <li><a href="/profile.html">My projects</a></li>
+              <li><a href="/profile.html">My purchases</a></li>
+              <li><a href="/profile.html">Billing information</a></li>
+            </ul>
+          </div>
           <a href="index.html" class="nav__link active">
             <div>
               <span class="material-icons nav__icon">home</span>
@@ -88,8 +88,13 @@
                   alt="Profile picture of George Clooney"
               /></a>
               <div class="cta__content">
-                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
-                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
+                <input type="checkbox" name="ctaBuy" id="ctaBuy" class="cta__checkbox" />
+                <label for="ctaBuy" class="cta__buy">$25 Buy Now</label>
+
+                <input type="checkbox" name="ctaPpv" id="ctaPpv" class="cta__checkbox" />
+                <label for="ctaPpv" class="cta__ppv">$2 Pay Per View</label>
+                <!-- <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
+                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a> -->
               </div>
             </div>
             <div class="cta__name-info">
@@ -231,7 +236,7 @@
         <div id="overlayhtml__buy">
           <a href="" class="close">x</a>
           <div class="overlayhtml__flex">
-            <h1>$25</h1>
+            <h2>$25</h2>
             <div>
               <img
                 src="/images/resized/star-wars.jpg"
@@ -246,10 +251,10 @@
               <p>or add card information</p>
             </div>
             <div class="overlayhtml__input">
-              <input type="text" name="name" id="name" placeholder="name cardholder" />
-              <input type="text" name="number" id="number" placeholder="card number" />
-              <input type="text" name="exp-date" id="exp-date" placeholder="exp.date" />
-              <input type="text" name="cvc" id="cvc" placeholder="cvc" />
+              <input type="text" name="name" id="name" placeholder="Name Cardholder" />
+              <input type="number" name="number" id="number" placeholder="Card Number" />
+              <input type="text" name="exp-date" id="exp-date" placeholder="00/00" />
+              <input type="number" name="cvc" id="cvc" placeholder="CVC" />
             </div>
             <div class="overlayhtml__button">
               <a href="#">buy now</a>
@@ -271,5 +276,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
