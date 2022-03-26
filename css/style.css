@@ -154,6 +154,7 @@ h2 {
 
 .featured {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .featured__section {
@@ -166,6 +167,7 @@ h2 {
   height: 160px;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
 }
 
@@ -227,7 +229,6 @@ h2 {
 .profilehtml__img {
   width: 80px;
   height: 80px;
-  margin-left: 40px;
   margin-top: 30px;
 }
 
@@ -242,6 +243,8 @@ h2 {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  justify-content: center;
+}argin-left: unset;
 }
 
 .name {
@@ -529,10 +532,6 @@ input[type="text"] {
   margin: auto auto 170px auto;
 }
 
-.filmpage__project-img {
-  height: 150px;
-}
-
 .filmpage__overlay {
   width: 100%;
   max-width: 450px;
@@ -675,6 +674,18 @@ input[type="text"] {
   gap: 5px;
 }
 
+.creators__content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.creators__content p {
+  width: 120px;
+  text-align: center;
+}
+
 .profile__big {
   width: 70px;
   height: 70px;
@@ -712,8 +723,8 @@ input[type="text"] {
     padding-bottom: 30px;
   }
 
-  .featured {
-    margin-bottom: 10px;
+  .creators__content a {
+    font-size: 14px;
   }
 
   /*images*/
@@ -891,6 +902,7 @@ input[type="text"] {
   .featured__filmpage {
     max-width: 600px;
     margin: auto;
+    margin-bottom: 10px;
   }
 
   .filmpage__cta {
@@ -919,9 +931,6 @@ input[type="text"] {
 
   .projects__img {
     width: 250px;
-  }
-  .filmpage__project-img {
-    height: 250px;
   }
 
   /*/filmpage.html*/
@@ -956,10 +965,9 @@ input[type="text"] {
 
   main {
     max-width: 1000px;
-    /* margin-top: 180px; */
   }
 
-  main h1 {
+  .main__filmpage h1 {
     text-align: center;
   }
 
@@ -1099,6 +1107,7 @@ input[type="text"] {
   .featured__container {
     max-width: 350px;
     margin: 0;
+    padding-bottom: unset;
   }
 
   .featured__section:nth-child(1) {
@@ -1224,8 +1233,12 @@ input[type="text"] {
     width: 290px;
   }
 
-  .filmpage__project-img {
-    height: 250px;
+  .featured__img {
+    height: 240px;
+  }
+
+  .featured__img-filmpage {
+    height: 350px;
   }
 
   /*/filmpage.html*/
@@ -1285,6 +1298,14 @@ input[type="text"] {
     width: 450px;
   }
 
+  .featured__img {
+    height: 300px;
+  }
+
+  .featured__img-filmpage {
+    height: 350px;
+  }
+
   .featured__container {
     max-width: 800px;
   }
@@ -1312,13 +1333,17 @@ input[type="text"] {
     height: 140px;
   }
 
-  .filmpage__project-img {
-    height: 250px;
+  .projects__img .featured__img {
+    height: 280px;
   }
 }
 
 @media (min-width: 1177px) {
   main h1 {
     text-align: left;
+  }
+
+  .main__favorites h1 {
+    text-align: center;
   }
 }
