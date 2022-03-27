@@ -51,7 +51,10 @@
               <span class="material-icons nav__icon">favorite</span>
             </div>
           </a>
-          <div>
+          <div class="nav__mobile">
+            <a href="/profile.html"><span class="material-icons nav__icon">person</span></a>
+          </div>
+          <div class="nav__desktop">
             <label for="searchpage"><span class="material-icons nav__icon">person</span></label>
             <input type="checkbox" name="searchpage" id="searchpage" class="list__toggle" />
             <ul class="list">
@@ -90,11 +93,8 @@
               <div class="cta__content">
                 <input type="checkbox" name="ctaBuy" id="ctaBuy" class="cta__checkbox" />
                 <label for="ctaBuy" class="cta__buy">$25 Buy Now</label>
-
                 <input type="checkbox" name="ctaPpv" id="ctaPpv" class="cta__checkbox" />
                 <label for="ctaPpv" class="cta__ppv">$2 Pay Per View</label>
-                <!-- <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
-                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a> -->
               </div>
             </div>
             <div class="cta__name-info">
@@ -121,8 +121,10 @@
                   alt="Profile picture of Julia Roberts"
               /></a>
               <div class="cta__content">
-                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
-                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
+                <input type="checkbox" name="ctaBuy" id="ctaBuy" class="cta__checkbox" />
+                <label for="ctaBuy" class="cta__buy">$25 Buy Now</label>
+                <input type="checkbox" name="ctaPpv" id="ctaPpv" class="cta__checkbox" />
+                <label for="ctaPpv" class="cta__ppv">$2 Pay Per View</label>
               </div>
             </div>
           </section>
@@ -139,8 +141,10 @@
                   alt="Profile picture of George Clooney"
               /></a>
               <div class="cta__content">
-                <a href="#overlayhtml__buy" class="cta__buy">$25 Buy Now</a>
-                <a href="#overlayhtml__buy" class="cta__ppv">$2 Pay Per View</a>
+                <input type="checkbox" name="ctaBuy" id="ctaBuy" class="cta__checkbox" />
+                <label for="ctaBuy" class="cta__buy">$25 Buy Now</label>
+                <input type="checkbox" name="ctaPpv" id="ctaPpv" class="cta__checkbox" />
+                <label for="ctaPpv" class="cta__ppv">$2 Pay Per View</label>
               </div>
             </div>
           </section>
@@ -235,6 +239,7 @@
       <section class="overlayhtml__section">
         <div id="overlayhtml__buy">
           <a href="" class="close">x</a>
+          <div class="success__message"></div>
           <div class="overlayhtml__flex">
             <h2>$25</h2>
             <div>
@@ -250,15 +255,17 @@
               <img src="/images/vipps-logo-orange.png" class="vipps" alt="vipps logo" />
               <p>or add card information</p>
             </div>
-            <div class="overlayhtml__input">
+            <form action="submit" class="overlayhtml__input">
               <input type="text" name="name" id="name" placeholder="Name Cardholder" />
+              <p class="error name__error">Please insert your name</p>
               <input type="number" name="number" id="number" placeholder="Card Number" />
-              <input type="text" name="exp-date" id="exp-date" placeholder="00/00" />
+              <p class="error cardnumber__error">Please insert your card number</p>
+              <input type="text" name="exp-date" id="exp-date" placeholder="Expiry date (xx/xx)" />
+              <p class="error expdate__error">Please insert the card's expiry date (xx/xx)</p>
               <input type="number" name="cvc" id="cvc" placeholder="CVC" />
-            </div>
-            <div class="overlayhtml__button">
-              <a href="#">buy now</a>
-            </div>
+              <p class="error cvc__error">Please insert the card's cvc number</p>
+              <button type="submit">buy now</button>
+            </form>
           </div>
         </div>
         <div class="overlayhtml"></div>
@@ -277,5 +284,6 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/forms.js"></script>
   </body>
 </html>
