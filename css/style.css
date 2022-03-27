@@ -30,7 +30,9 @@ header {
   padding: 70px 0px;
 }
 
-.nav__bar a, .nav__bar span, .nav__bar div {
+.nav__bar a,
+.nav__bar span,
+.nav__bar div {
   color: #fff;
   margin: auto;
 }
@@ -38,7 +40,8 @@ header {
 .upload__button,
 .login__desktop,
 .login__container,
-.login__input-container, .nav__desktop {
+.login__input-container,
+.nav__desktop {
   display: none;
 }
 
@@ -249,7 +252,7 @@ h2 {
   gap: 30px;
   align-items: center;
   justify-content: center;
-}argin-left: unset;
+  margin-left: unset;
 }
 
 .name {
@@ -335,10 +338,10 @@ h2 {
   text-align: center;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
   outline: none;
   border: none;
-
 }
 
 input::-webkit-outer-spin-button,
@@ -346,7 +349,8 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
   border: none;
   border-bottom: 1px solid #424242;
   line-height: 2em;
@@ -380,7 +384,8 @@ input[type="text"], input[type="number"] {
   top: -200px;
 }
 
-.overlayhtml, .logo__background {
+.overlayhtml,
+.logo__background {
   position: fixed;
   top: 0;
   left: 0;
@@ -484,7 +489,8 @@ input[type="text"], input[type="number"] {
   margin-top: 20px;
 }
 
-.overlayhtml__button a, button {
+.overlayhtml__button a,
+button {
   background-color: #36545c;
   color: #e39d18;
   padding: 10px 25px;
@@ -504,7 +510,6 @@ input[type="text"], input[type="number"] {
   opacity: 0.5;
   display: none;
 }
-
 
 /*/overlay.html*/
 
@@ -883,8 +888,7 @@ input[type="text"], input[type="number"] {
   }
 
   .creator__checked:checked + label,
-  .watcher__checked:checked + label
-  { 
+  .watcher__checked:checked + label {
     background-color: #e39d18;
     border: 1px solid #e39d18;
   }
@@ -917,7 +921,8 @@ input[type="text"], input[type="number"] {
     margin: auto;
   }
 
-  input[type="text"], input[type="number"] {
+  input[type="text"],
+  input[type="number"] {
     border: none;
     border-bottom: 1px solid #424242;
     line-height: 2em;
@@ -1010,7 +1015,8 @@ input[type="text"], input[type="number"] {
 @media (min-width: 880px) {
   /* HIDE */
 
-  .logo__mobile, .nav__mobile {
+  .logo__mobile,
+  .nav__mobile {
     display: none;
   }
 
@@ -1069,7 +1075,8 @@ input[type="text"], input[type="number"] {
     justify-content: space-between;
   }
 
-  .nav__bar a, .nav__bar div {
+  .nav__bar a,
+  .nav__bar div {
     margin: unset;
   }
 
@@ -1085,7 +1092,6 @@ input[type="text"], input[type="number"] {
   .nav__icon {
     font-size: 1.7em;
     cursor: pointer;
-    
   }
 
   .nav__desktop {
@@ -1329,9 +1335,6 @@ input[type="text"], input[type="number"] {
     display: flex;
   }
 
-  .favorites__footer {
-  }
-
   .profilehtml__footer {
     position: absolute;
   }
@@ -1360,7 +1363,6 @@ input[type="text"], input[type="number"] {
     font-size: 0.8em;
     width: 500px;
   }
-
 }
 
 @media (min-width: 1000px) {
