@@ -183,6 +183,10 @@ h2 {
   height: 250px;
 }
 
+.projects__img {
+  height: 160px;
+}
+
 .profile__img {
   object-fit: cover;
   width: 30px;
@@ -625,6 +629,21 @@ button {
   margin: auto;
 }
 
+.search {
+  display: block;
+  margin: auto;
+}
+
+.search__results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.search__results .projects__img {
+  margin-bottom: 20px;
+}
+
 #search {
   width: 100%;
   border: 1px solid #fff;
@@ -664,6 +683,14 @@ button {
 
 .categories__name {
   color: #424242;
+}
+
+.category__results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /*/search.html*/
@@ -1311,12 +1338,13 @@ button {
     font-size: 1.2em;
   }
 
-  .projects__img {
-    width: 290px;
-  }
-
   .featured__img {
     height: 230px;
+  }
+
+  .projects__img {
+    width: 290px;
+    height: 160px;
   }
 
   .featured__img-filmpage {
@@ -1369,12 +1397,12 @@ button {
     width: 450px;
   }
 
-  .featured__img {
-    height: 300px;
-  }
-
   .featured__img-filmpage {
     height: 350px;
+  }
+
+  .featured__img-one {
+    height: 300px;
   }
 
   .featured__container {
@@ -1402,10 +1430,6 @@ button {
   .profile__big {
     width: 140px;
     height: 140px;
-  }
-
-  .projects__img .featured__img {
-    height: 280px;
   }
 }
 
