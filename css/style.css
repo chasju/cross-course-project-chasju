@@ -180,11 +180,11 @@ h2 {
 
 .featured__img-profile,
 .featured__img-filmpage {
-  height: 250px;
+  height: 155px;
 }
 
 .projects__img {
-  height: 160px;
+  height: 115px;
 }
 
 .profile__img {
@@ -616,6 +616,8 @@ button {
 
 .projects__img {
   position: relative;
+  margin: auto;
+  margin-bottom: 20px;
   width: 180px;
 }
 
@@ -632,6 +634,7 @@ button {
 .search {
   display: block;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .search__results {
@@ -671,6 +674,7 @@ button {
 
 .categories__section {
   width: 150px;
+  margin: auto;
 }
 
 .categories__img {
@@ -772,6 +776,10 @@ button {
 .creators__content p {
   width: 120px;
   text-align: center;
+}
+
+.creators__content div {
+  margin: auto;
 }
 
 .profile__big {

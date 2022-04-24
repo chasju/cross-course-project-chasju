@@ -53,7 +53,6 @@ async function getCategoryLinks() {
   try {
     const response = await fetch(categoryUrl);
     const categories = await response.json();
-    console.log(categories);
 
     categoryContainer.innerHTML = "";
 
