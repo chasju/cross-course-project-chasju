@@ -16,7 +16,7 @@ For this project I've used:
 
 - html
 - css
-- vanilla javascript
+- vanilla JavaScript
 
 ## Contributing
 
